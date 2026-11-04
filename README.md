@@ -68,6 +68,10 @@ cargo run --release --bin tromso -- \
 cargo run --release --bin plot_leo -- output/population.h5
 ```
 
-Implementation: Rust, DOP853 orbit integration, NRLMSISE-00 atmosphere,
-HDF5 outputs and Rustplotlib figures. Contributions and reproducible comparisons
-with observations are welcome.
+Orbit integration uses our [GMAT-compatible Rust DOP853 propagator](https://github.com/jvierine/numerical_propagator),
+which supports EGM spherical-harmonic Earth gravity. The current TROMSØ setup
+retains central gravity and $J_2$, plus Sun/Moon perturbations. Atmospheric drag
+uses NRLMSISE-00 densities through [rmsis](https://github.com/jvierine/rmsis).
+
+Outputs use HDF5; figures use Rustplotlib. Contributions and reproducible
+comparisons with observations are welcome.
