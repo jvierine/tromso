@@ -1,0 +1,24 @@
+[package]
+name = "tromso"
+version = "0.2.0"
+edition = "2024"
+description = "TROMSØ: Tromsø Reference Orbital Model for Space Objects"
+repository = "https://github.com/jvierine/tromso"
+[dependencies]
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+hdf5 = { package = "hdf5-metno", version = "0.15" }
+sha2 = "0.10"
+rayon = "1"
+sgp4 = "2.4"
+chrono = "0.4"
+sofars = "0.6.2"
+numerical_propagator = { git = "https://github.com/jvierine/numerical_propagator", rev = "23cfa8dcee0998ebaeb48b4efefb06c1943df3b6", default-features = false }
+rmsis = { git = "https://github.com/jvierine/rmsis", rev = "fc707387617885de749dcc516c306a74227cf1b5" }
+rustplotlib = { git = "https://github.com/jvierine/rustplotlib", rev = "96e8aaafce8607f8aa506cd59089255a904fc499" }
+[profile.release]
+lto = "thin"
+
+[workspace]
