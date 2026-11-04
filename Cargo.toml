@@ -4,6 +4,8 @@ version = "0.2.0"
 edition = "2024"
 description = "TROMSØ: Tromsø Reference Orbital Model for Space Objects"
 repository = "https://github.com/jvierine/tromso"
+license = "MIT"
+
 [dependencies]
 anyhow = "1"
 clap = { version = "4", features = ["derive"] }
