@@ -28,7 +28,10 @@ N(>L_c) \propto L_c^{-p}, \qquad
 \frac{dN}{dL_c} \propto L_c^{-(p+1)},
 $$
 
-with $p=1.71$ for collisions and $p=1.6$ for explosions. Here $L_c$ is
+with $p=1.71$ for collisions and $p=1.6$ for explosions, following the NASA
+Standard Breakup Model of [Johnson, Krisko, Liou and Anz-Meador (2001),
+*NASA’s new breakup model of EVOLVE 4.0*](https://doi.org/10.1016/S0273-1177(01)00423-9).
+Here $L_c$ is
 characteristic fragment length, not a radar-equivalent diameter. Drag follows
 
 $$
