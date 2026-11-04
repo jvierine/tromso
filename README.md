@@ -42,7 +42,10 @@ $$
 The present implementation reports **0–2,000 km** altitude and **1–79 mm**
 fragments. Trajectories terminate at 120 km; lower reporting cells are masked.
 The empirical fragment model allows irregular shapes rather than assuming
-all fragments are spheres.
+all fragments are spheres. Shape matters for both atmospheric drag, through
+area-to-mass ratio, and collision probability, through projected area and
+orientation. The current model samples empirical area-to-mass ratios;
+shape- and orientation-dependent collision cross sections remain future work.
 
 **Status:** an experimental source-and-survival model, not yet a calibrated
 global debris environment. The default production rate is one fragment per
