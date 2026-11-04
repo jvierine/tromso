@@ -198,9 +198,9 @@ https://ntrs.nasa.gov/api/citations/20220009373/downloads/Cowardin_DebriSat%20Hy
 
 ## Initial full-domain check
 
-A cached2026-11-03 catalogue supplied29,771eligible LEO/intersecting parents.
-The initial384weighted fragments over30days completed with0numerical failures:
-229retained bound survivors,150reentries and5unbound ejections. Bound survivors
+A cached2026-11-03 catalogue supplied29,771 eligible LEO/intersecting parents.
+The initial384 weighted fragments over 30 days completed with 0 numerical failures:
+229 retained bound survivors, 150 reentries and 5 unbound ejections. Bound survivors
 outside2000km remain propagated; only their occupancy inside LEO enters the
 reported grid. This small run checks the data path and domain handling, not
 population convergence, calibrated flux, or agreement with ORDEM/MASTER.
@@ -208,3 +208,14 @@ population convergence, calibrated flux, or agreement with ORDEM/MASTER.
 Use `--epoch 2026-11-03T12:00:00Z` to set the model evaluation epoch explicitly.
 The climatological atmosphere is independent of that date; exact historical
 solar/geomagnetic drivers are not yet an option in this release.
+
+## Example output
+
+![Full LEO pilot](examples/full-leo-pilot.png)
+
+This is the small 384-fragment, 30-day pilot, normalized to one new fragment/day.
+It is not a calibrated global density map. White cells have no surviving Monte
+Carlo sample; they do not establish zero debris. The dashed line is the 120 km
+orbital-removal boundary, below which reentry/ablation is not modeled. Larger
+runs, source-rate calibration and atmospheric/morphology sensitivity are needed
+before using the output for radar flux or hazard predictions.
