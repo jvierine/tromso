@@ -5,8 +5,8 @@
 An open-source model of the orbital debris environment, built in Tromsø, Norway.
 Free to use, inspect, modify and contribute to under the [MIT license](LICENSE).
 The goal is a community-built alternative to models that require accounts,
-license agreements or Windows software. TROMSØ itself requires none of these;
-external catalogue providers may have their own access terms.
+restrictive legally dubious license agreements or binary only Windows software. TROMSØ itself requires none of these;
+external catalogue providers may have their own access terms. Anyone can freely inspect and critically inspect this model without signing anything.
 
 ![Tracked objects around Earth, including the geostationary belt](examples/earth-debris.png)
 
